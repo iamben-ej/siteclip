@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:siteclip/core/constants/colors.dart';
 import 'package:siteclip/features/auth/onboarding_screen.dart';
 import 'package:siteclip/features/auth/signin_screen.dart';
 import 'package:siteclip/features/auth/email_input_screen.dart';
@@ -17,7 +18,29 @@ class SiteClipApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        scaffoldBackgroundColor: AppColors.surfaceBackground,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppColors.primaryAction,
+          primary: AppColors.primaryAction,
+        ),
+        textTheme: const TextTheme(
+          headlineLarge: TextStyle(
+            color: AppColors.textPrimary,
+            fontSize: 48,
+            fontWeight: FontWeight.bold,
+          ),
+          bodyMedium: TextStyle(color: AppColors.textSecondary, fontSize: 16),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primaryAction,
+            foregroundColor: AppColors.textOnPrimary,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(24),
+            ),
+            minimumSize: const Size(double.infinity, 56),
+          ),
+        ),
       ),
       routerConfig: GoRouter(
         initialLocation: '/',
