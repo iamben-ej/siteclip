@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static const Color primaryAction = Color(0xFF1B1B1B);
-  static const Color surfaceBackground = Color(0xFFF2F1F7);
+  static const Color surfaceBackground = Color(0xFFFFFFFF);
+  static const Color surfaceBackground2 = Color(0xFFF2F1F7);
   static const Color surfaceCard = Color(0xFFFFFFFF);
   static const Color textPrimary = Color(0xFF1B1B1B);
   static const Color textSecondary = Color(0xFF666666);

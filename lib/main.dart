@@ -36,9 +36,9 @@ class SiteClipApp extends StatelessWidget {
             backgroundColor: AppColors.primaryAction,
             foregroundColor: AppColors.textOnPrimary,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(24),
+              borderRadius: BorderRadius.circular(16),
             ),
-            minimumSize: const Size(double.infinity, 56),
+            minimumSize: const Size(double.infinity, 48),
           ),
         ),
       ),

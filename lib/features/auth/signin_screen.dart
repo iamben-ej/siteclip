@@ -86,7 +86,10 @@ class SignInScreen extends StatelessWidget {
                         ),
                       ),
                       style: OutlinedButton.styleFrom(
-                        minimumSize: const Size(double.infinity, 56),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        minimumSize: const Size(double.infinity, 48),
                         side: BorderSide(color: AppColors.borderDefault),
                         backgroundColor: AppColors.surfaceCard,
                       ),
@@ -115,7 +118,10 @@ class SignInScreen extends StatelessWidget {
                         ),
                       ),
                       style: OutlinedButton.styleFrom(
-                        minimumSize: const Size(double.infinity, 56),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        minimumSize: const Size(double.infinity, 48),
                         side: BorderSide(color: AppColors.borderDefault),
                         backgroundColor: AppColors.surfaceCard,
                       ),
