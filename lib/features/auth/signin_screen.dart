@@ -35,7 +35,7 @@ class SignInScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 24),
                     child: ElevatedButton(
-                      onPressed: () => context.go('/email-input'),
+                      onPressed: () => context.push('/email-input'),
                       child: const Text(
                         'Continue with Email',
                         style: TextStyle(
