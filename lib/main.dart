@@ -5,6 +5,8 @@ import 'package:siteclip/features/auth/onboarding_screen.dart';
 import 'package:siteclip/features/auth/signin_screen.dart';
 import 'package:siteclip/features/auth/email_input_screen.dart';
 import 'package:siteclip/features/home/home_screen.dart';
+import 'package:siteclip/features/project/project_create_screen.dart';
+import 'package:siteclip/features/project/project_details_screen.dart';
 
 void main() => runApp(const SiteClipApp());
 
@@ -59,8 +61,42 @@ class SiteClipApp extends StatelessWidget {
           ),
           GoRoute(
             path: '/home',
+            builder: (context, state) => const HomeScreen(),
+          ),
+          // Placeholder: Create Project screen
+          GoRoute(
+            path: '/project/create',
             builder:
-                (context, state) => const HomeScreen(), // Placeholder for now
+                (context, state) => const Scaffold(
+                  body: Center(
+                    child: Text(
+                      'Create Project Screen',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+          ),
+          // Placeholder: Project Details screen (with dynamic :id)
+          GoRoute(
+            path: '/project/:id',
+            builder: (context, state) {
+              final id = state.pathParameters['id']!;
+              return Scaffold(
+                body: Center(
+                  child: Text(
+                    'Project Details\nID: $id',
+                    style: const TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              );
+            },
           ),
         ],
       ),

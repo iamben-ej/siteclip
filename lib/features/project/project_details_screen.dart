@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+
+class ProjectDetailsScreen extends StatelessWidget {
+  final String projectId;
+  const ProjectDetailsScreen({super.key, required this.projectId});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text('Project Details for ID: $projectId (Placeholder)'),
+      ),
+    );
+  }
+}

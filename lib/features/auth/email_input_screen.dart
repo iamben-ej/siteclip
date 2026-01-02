@@ -278,7 +278,10 @@ class _EmailInputScreenState extends State<EmailInputScreen> {
               Container(
                 color: Colors.black54,
                 child: const Center(
-                  child: CircularProgressIndicator(color: Colors.white),
+                  child: CircularProgressIndicator(
+                    year2023: false,
+                    color: Colors.white,
+                  ),
                 ),
               ),
           ],
